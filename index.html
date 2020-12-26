@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/5514dc631b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Calorie One | Track Calorie</title>
+  </head>
+  <body>
+    <!-- Container for the app -->
+    <div class="container">
+      <!-- Header -->
+      <header id="main-header">
+        <h2 class="logo">
+          <a href="#" class="secondary"
+            ><span class="primary">Calorie</span>One</a
+          >
+        </h2>
+      </header>
+      <!-- Input box -->
+      <section id="input-box" class="bg-light">
+        <!-- Input contain -->
+        <div class="input-contain">
+          <!-- Item field -->
+
+          <div class="form-grp">
+            <input
+              type="text"
+              name="item"
+              id="item-field"
+              class="item-field"
+              required
+            />
+            <label class="label-contain">
+              <span class="label-name">Item</span>
+            </label>
+          </div>
+
+          <!-- Calories field -->
+
+          <div class="form-grp">
+            <input
+              type="number"
+              name="calories"
+              id="calories-field"
+              class="calories-field"
+              required
+            />
+            <label class="label-contain">
+              <span class="label-name">Calories</span>
+            </label>
+          </div>
+        </div>
+        <!-- Buttons contain -->
+        <div class="btn-contain">
+          <!-- Buttons on default state -->
+          <div class="btn-default-state">
+            <!-- Add button -->
+            <button class="btn btn-primary add-btn">Add Item</button>
+            <!-- Reset button -->
+            <button class="btn btn-med reset-btn">Reset</button>
+          </div>
+          <!-- Buttons on edit state -->
+          <div class="btn-edit-state">
+            <div class="btn-grp">
+              <!-- Update button -->
+              <button class="btn btn-primary update-btn">Update</button>
+              <!-- Delete button -->
+              <button class="btn btn-warn delete-btn">Delete</button>
+            </div>
+            <!-- Back button -->
+            <button class="btn btn-med back-btn">Back</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Total calories output tab -->
+      <section id="total-cal-contain" class="bg-light">
+        <p class="lead secondary">
+          Total Calories : <span id="total-cal">0</span> kcal
+        </p>
+      </section>
+
+      <!-- Item lists with their calories -->
+      <ul id="item-lists"></ul>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
